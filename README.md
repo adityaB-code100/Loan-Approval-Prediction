@@ -26,25 +26,25 @@ Exploratory Data Analysis was performed to understand the structure, relationshi
 
 ## 3.1 Target Variable Distribution 
 
-![](media/image1.png){width="5.8in" height="4.506475284339458in"}
+![](media/image1.png)
 
 The dataset is highly imbalanced as the number of rejected loan applications is significantly higher than approved loans. To solve this issue, SMOTE (Synthetic Minority Oversampling Technique) was applied during preprocessing.
 
 ## 3.2 Distribution of Numerical Features
 
-![](media/image2.png){width="6.2in" height="4.914227909011373in"}
+![](media/image2.png)
 
 The numerical feature distributions show that customer attributes such as age, income, credit score, and loan amount are spread across wide ranges. Credit score and income appear to play an important role in loan approval decisions.
 
 ## 3.3 Correlation Analysis {#correlation-analysis}
 
-![](media/image3.png){width="5.8in" height="5.1513156167979in"}
+![](media/image3.png)
 
 The correlation heatmap indicates that Credit Score has the strongest positive correlation with loan approval (0.50), while Loan Amount shows a negative correlation (-0.34). This suggests that higher credit scores increase approval chances whereas larger loan amounts reduce approval probability.
 
 ## 3.4 Loan Approval by Employment Status 
 
-![](media/image4.png){width="5.8in" height="4.506475284339458in"}
+![](media/image4.png)
 
 Employed customers received comparatively more approvals than unemployed or self-employed applicants. Employment status therefore acts as an important categorical feature.
 
@@ -76,25 +76,25 @@ Employed customers received comparatively more approvals than unemployed or self
 
 # 6. Model Evaluation and Performance Analysis 
 
-![](media/image5.png){width="6.3in" height="4.46438867016623in"}
+![](media/image5.png)
 
 The comparison graph demonstrates that Random Forest and Gradient Boosting achieved perfect performance with 100% accuracy, precision, recall, and F1-score. SVM also produced excellent results with 97.5% accuracy, while Logistic Regression performed comparatively lower with 88% accuracy.
 
 ## 6.1 ROC Curve Analysis 
 
-![](media/image6.png){width="6.0in" height="4.9689741907261595in"}
+![](media/image6.png)
 
 ROC curves indicate the ability of the model to distinguish between approved and rejected loans. Random Forest and Gradient Boosting achieved an AUC score of 1.0, indicating perfect classification performance.
 
 ## 6.2 Confusion Matrix Analysis 
 
-![](media/image7.png){width="6.0in" height="5.1168832020997375in"}
+![](media/image7.png)
 
 The confusion matrices show prediction correctness for each model. Random Forest and Gradient Boosting classified all test samples correctly without any false predictions.
 
 # 7. Feature Importance Analysis 
 
-![](media/image8.png){width="5.8in" height="3.2044542869641295in"}
+![](media/image8.png)
 
 Feature importance analysis from Random Forest shows that Credit Score is the most influential feature for loan approval prediction, followed by Loan Amount and Income. Age and Loan Term had minimal impact.
 
